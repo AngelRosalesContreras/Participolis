@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options">
+        <item>Cultura</item>
+        <item>Seguridad</item>
+        <item>Servicios Publicos</item>
+        <item>Salud y Bienestar</item>
+        <item>Actividades Comunitarias</item>
+        <item>Trabajos</item>
+        <item>Sociales</item>
+        <item>Medio Ambiente</item>
+    </string-array>
+</resources>

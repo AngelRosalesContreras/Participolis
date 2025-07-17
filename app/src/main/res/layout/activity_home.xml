@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo2"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:radius="46dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fondo2"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/imageViewPublicacion"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/centra4"
+                        app:civ_border_color="#EEEEEE"
+                        app:civ_border_width="4dp"
+                        app:civ_shadow_color="#EEEEEE"
+                        app:civ_shadow_radius="10dp"
+                        tools:layout_editor_absoluteX="50dp"
+                        tools:layout_editor_absoluteY="50dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="end"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="60dp">
+
+
+                        <TextView
+                            android:id="@+id/textViewNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/chewy"
+                            android:gravity="center"
+                            android:text="Hamburgesa"
+                            android:textColor="@color/contenedores"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewDescripcion"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="5"
+
+                            android:fontFamily="@font/architects_daughter"
+                            android:text="Descripción"
+                            android:textColor="@color/contenedores"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ViewFlipper
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:flipInterval="5000"
+           android:autoStart="true"
+           android:inAnimation="@android:anim/slide_in_left"
+           android:outAnimation="@android:anim/slide_out_right">
+
+           <ImageView
+               android:layout_width="400dp"
+               android:layout_height="200dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/lugar"
+               android:gravity="center"/>
+
+           <ImageView
+               android:layout_width="400dp"
+               android:layout_height="200dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/lg2"
+               android:gravity="center"/>
+
+           <ImageView
+               android:layout_width="400dp"
+               android:layout_height="200dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/lg3"
+               android:gravity="center"/>
+
+
+       </ViewFlipper>
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

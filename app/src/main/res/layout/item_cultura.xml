@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.44"
+        android:layout_gravity="center_horizontal">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="8"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <!-- Row 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_rowWeight="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/barra_nav"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textViewCulturaTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/galindo"
+                        android:textSize="18sp"
+                        android:textColor="@color/contenedores"
+                        android:text="Coliseo romano" />
+
+                    <TextView
+                        android:id="@+id/textViewCulturaAsunto"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galindo"
+                        android:textSize="16sp"
+                        android:textColor="@color/contenedores"
+                        android:text="Coliseo romano" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Participolis" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/my_light_primary
+        </item> <!-- Cambia el color primario aquí -->
+
+    </style>
+
+    <style name="Theme.Participolis" parent="Base.Theme.Participolis" />
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slider_in</item>
+        <item name="android:windowExitAnimation">@anim/slider_out</item>
+    </style>
+
+    <style name="Theme.Participolis.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Participolis.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Participolis.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

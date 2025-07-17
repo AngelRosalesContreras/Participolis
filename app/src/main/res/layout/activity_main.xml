@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:background="#FEFCFF"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/toolbar1"
+            android:elevation="4dp"
+            android:background="@color/barra_nav"
+            app:itemTextColor="#CFD7C7"
+            app:title=" Participolis"
+            android:fontFamily="casual">
+
+            <!-- Contenedor LinearLayout horizontal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:paddingEnd="16dp">
+
+                <!-- Texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/galindo"
+                    android:paddingStart="8dp"
+                    android:text="Participolis"
+                    android:textColor="#247BA0"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"/>
+
+                <!-- Icono -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/kayli2"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/barra_nav"
+            app:backgroundTint="@color/barra_nav"
+            app:fabCradleMargin="20dp"
+            app:fabCradleRoundedCornerRadius="160dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                app:backgroundTint="@color/barra_nav"
+                app:itemBackground="@color/barra_nav"
+                app:itemIconTint="#CFD7C7"
+                app:itemTextColor="#CFD7C7"
+                app:labelVisibilityMode="selected"
+                app:menu="@menu/botton_nav" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:background="#FFFF"
+        app:itemIconTint="@color/botones"
+        app:itemTextColor="@color/botones"/>
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            app:tint="@color/botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/baseline_add_24"
+            android:layout_marginBottom="54dp"
+            android:backgroundTint="@color/white"
+            android:shape = "oval"
+            app:maxImageSize="40dp"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

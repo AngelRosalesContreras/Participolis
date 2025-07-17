@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:title="Foro"
+        android:id="@+id/Profile"
+        android:icon="@drawable/baseline_filter_frames_24"/>
+
+    <item
+        android:title="" />
+
+    <item
+        android:title="Directorio"
+        android:id="@+id/Directorio"
+        android:icon="@drawable/baseline_person_24"/>
+
+
+    <item
+        android:title="Encuestas"
+        android:id="@+id/Encuestas"
+        android:icon="@drawable/baseline_ballot_24"/>
+
+</menu>

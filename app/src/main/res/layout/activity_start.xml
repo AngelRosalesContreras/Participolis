@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Start_Home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Start">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="363dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/galindo"
+        android:text="Participolis"
+        android:gravity="center"
+        android:textColor="#247BA0"
+        android:textSize="60sp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="287dp"
+        android:layout_height="287dp"
+        app:srcCompat="@drawable/central3" />
+
+
+    <Button
+        android:id="@+id/buttonEntrarPrincipal"
+        android:layout_width="301dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/botones"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/white"
+        android:text="Entrar"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="No tienes una cuenta? "
+            android:textColor="#50514F"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Registarse "
+            android:textColor="#247BA0"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

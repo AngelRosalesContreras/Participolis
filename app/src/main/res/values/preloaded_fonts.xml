@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/amatica_sc</item>
+        <item>@font/amita</item>
+        <item>@font/arbutus</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/chewy</item>
+        <item>@font/coming_soon</item>
+        <item>@font/domine</item>
+        <item>@font/domine_bold</item>
+        <item>@font/galindo</item>
+        <item>@font/italiana</item>
+        <item>@font/the_girl_next_door</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>

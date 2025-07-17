@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FEFCFF"
+    android:orientation="vertical">
+
+    <!-- Row 1
+    <ListView
+        android:id="@+id/listViewOtherPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:orientation="horizontal"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.44"
+        android:layout_gravity="center_horizontal">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="8"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <!-- Row 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCultura"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                android:layout_row="1"
+                android:layout_rowWeight="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/maya">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewCultura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Cultura"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSeguridad"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="1"
+                android:layout_column="1"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    android:clickable="true"
+                    >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/policia">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewSeguradad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/galindo"
+                        android:text="Seguridad"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSerPublicos"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="2"
+                android:layout_column="0"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/hospital">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewServiciosPublicos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galindo"
+                        android:text="Servicios"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galindo"
+                        android:text="Públicos"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSalud"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="2"
+                android:layout_column="1"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/saludable">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewSaludBienestar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Salud y"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Bienestar"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardActCominutarias"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="3"
+                android:layout_column="0"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/unido">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewActividadesCulturales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galindo"
+                        android:text="Actividades"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galindo"
+                        android:text="Comunitarias"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSerTrabajos"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="3"
+                android:layout_column="1"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/administracion">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewAutoridades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Trabajos"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSociales"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="4"
+                android:layout_column="0"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/humano">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewSocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Sociales"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMedioAmbiente"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_row="4"
+                android:layout_column="1"
+
+                android:layout_margin="12dp"
+                app:cardElevation="12dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/barra_nav"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/planeta">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewMedioAmbiente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Medio"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Ambiente"
+                        android:fontFamily="@font/galindo"
+                        android:textColor="@color/contenedores"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

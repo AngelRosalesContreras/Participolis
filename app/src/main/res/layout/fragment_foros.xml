@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7d7c7"
+    android:orientation="vertical">
+
+    <!-- Layout para la publicación del usuario actual -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#33000000"
+        android:padding="16dp">
+
+        <!-- Foto del usuario (imagen circular) -->
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/kayli"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fab_background"/>
+
+        <!-- Nombre del usuario con efectos de texto -->
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angel Rosales Contreras"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"/>
+
+        <!-- Descripción de la publicación del usuario -->
+        <TextView
+            android:id="@+id/textViewUserDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción de la publicación del usuario."
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:textColor="#000000"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <!-- Lista de publicaciones de otros usuarios -->
+    <ListView
+        android:id="@+id/listViewOtherPosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

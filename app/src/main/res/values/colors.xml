@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="botones">#247BA0</color>
+    <color name="Fondo">#FFFCFF</color>
+    <color name="letra">#50514F</color>
+    <color name="icon_nav">#CBD4C2</color>
+    <color name="secciones">#C3B299</color>
+    <color name="barra_nav">#0B2027</color>
+    <color name="my_light_primary">#0B2027</color>
+    <color name="contenedores">#CFD7C7</color>
+    <color name="fondo2">#FEFCFF</color>
+</resources>
